@@ -15,6 +15,9 @@ function App() {
       return;
     }
   //counter = counter + 1;
+    setCounter(counter + 1); // still value will increase count only once in single click
+    setCounter(counter + 1); //  useState sends the updation in batches 
+    setCounter(counter + 1);
     setCounter(counter + 1);
   }
   const removeValue = () =>{
